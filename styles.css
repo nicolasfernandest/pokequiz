@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 body{
-    background-image: url(/../PokéQuiz!/images/pokecenter-bg.png);
+    background-image: url(/../pokequiz/images/pokecenter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
