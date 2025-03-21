@@ -8,26 +8,30 @@
 </head>
 <body>
     <header>
-        <div id="logotipo">
-            <img src="/PokéQuiz!/images/pokequiz-logo.png" alt="Logotipo PokéQuiz">
-            <img src="/PokéQuiz!/images/pikachu-running.gif" alt="Pikachu running">
-            <audio controls id="bg-music">
-                <source src="/PokéQuiz!/music/pokecenter-theme-lofi.mp3" type="audio/ogg">
-            </audio>
-        </div>
+        <img id="pikachu-sprite" src="/../PokéQuiz!/images/pikachu-walk.gif" alt="Pikachu running" onclick="playCry()">
+        <img id="logotipo" src="/../PokéQuiz!/images/pokequiz-new-logo.png" alt="Logotipo PokéQuiz">
+        <img id="eevee-sprite" src="/../PokéQuiz!/images/eevee-walk.gif" alt="Eevee running" onclick="playCry()">
+        <audio controls id="bg-music">
+            <source src="/../PokéQuiz!/audio/pokecenter-theme-lofi.mp3" type="audio/ogg">
+        </audio>
     </header>
     <section>
         <main>
             <div id="main-txt">
-                <h1>Seja muito bem-vindo à página de quiz de Pokémon!</h1>
-                <h2>Aperte no botão abaixo para começar</h2>
+                <p>Boas-vindas ao Pokéquiz! <br>
+                    Aqui você pode testar seus conhecimentos sobre Pokémon! <br>
+                    Aperte no botão abaixo para começar</p>
             </div>
-            <button id="start-button" onclick="swap(); options()">Próximo</button>
+            <div id="menu-options">
+                <button id="next-button" onclick="swap(); options()">Próximo</button>
+            </div>
         </main>
     </section>
+    <aside>
+    </aside>
     <footer>
-        <h3 class="copyright">&#169 2025 Pokémon. Todos os direitos reservados</h3>
-        <h4 class="copyright">&#169 1996-2025 Nintendo/Creatures Inc./GAME FREAK inc. Todos os direitos reservados</h4>
+        <p class="copyright">&#169 2025 Pokémon. Todos os direitos reservados <br>
+        &#169 1996-2025 Nintendo/Creatures Inc./GAME FREAK inc. Todos os direitos reservados</p>
     </footer>
 </body>
 <script src="script.js"></script>
