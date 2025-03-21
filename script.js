@@ -46,14 +46,14 @@ function getBack(){
 
 function playCry(){
     const pikachuSprite = document.getElementById('pikachu-sprite');
-    var pikachuCry = new Audio('/PokéQuiz!/audio/pikachu-cry.mp3');
+    var pikachuCry = new Audio('/../pokequiz/audio/pikachu-cry.mp3');
     pikachuSprite.addEventListener('click', function(){
         pikachuCry.play();
         pikachuCry.volume = 0.15;
     })
 
     const eeveeSprite = document.getElementById('eevee-sprite');
-    var eeveeCry = new Audio('/PokéQuiz!/audio/eevee-cry.mp3');
+    var eeveeCry = new Audio('/../pokequiz/audio/eevee-cry.mp3');
     eeveeSprite.addEventListener('click', function(){
         eeveeCry.play();
         eeveeCry.volume = 0.15;
