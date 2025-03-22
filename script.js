@@ -119,14 +119,22 @@ function checkAnswer(selectedOption, correctAnswer) {
 
 function playCry(){
     const pikachuSprite = document.getElementById('pikachu-sprite');
+<<<<<<< HEAD
     var pikachuCry = new Audio('/audio/pikachu-cry.mp3');
+=======
+    var pikachuCry = new Audio('/../pokequiz/audio/pikachu-cry.mp3');
+>>>>>>> 58041418f61ff83eecad958a5d12cbe4d1f2f7c1
     pikachuSprite.addEventListener('click', function(){
         pikachuCry.play();
         pikachuCry.volume = 0.15;
     })
 
     const eeveeSprite = document.getElementById('eevee-sprite');
+<<<<<<< HEAD
     var eeveeCry = new Audio('/audio/eevee-cry.mp3');
+=======
+    var eeveeCry = new Audio('/../pokequiz/audio/eevee-cry.mp3');
+>>>>>>> 58041418f61ff83eecad958a5d12cbe4d1f2f7c1
     eeveeSprite.addEventListener('click', function(){
         eeveeCry.play();
         eeveeCry.volume = 0.15;
