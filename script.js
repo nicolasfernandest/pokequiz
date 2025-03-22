@@ -102,7 +102,7 @@ function generateQuiz() {
 
 function checkAnswer(selectedOption, correctAnswer) {
     const resultContainer = document.getElementById("resposta-quiz");
-    var correct = new Audio('/audio/correct.mp3');
+    var correct = new Audio('audio/correct.mp3');
     resultContainer.style.textAlign = 'center';
     correct.volume = 0.15;
     
