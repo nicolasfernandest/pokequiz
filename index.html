@@ -8,28 +8,31 @@
 </head>
 <body>
     <header>
-        <img id="pikachu-sprite" src="/../pokequiz/images/pikachu-walk.gif" alt="Pikachu running" onclick="playCry()">
-        <img id="logotipo" src="/../pokequiz/images/pokequiz-new-logo.png" alt="Logotipo PokéQuiz">
-        <img id="eevee-sprite" src="/../pokequiz/images/eevee-walk.gif" alt="Eevee running" onclick="playCry()">
+        <img id="pikachu-sprite" src="/images/pikachu-walk.gif" alt="Pikachu running" onclick="playCry()">
+        <img id="logotipo" src="/images/pokequiz-new-logo.png" alt="Logotipo PokéQuiz">
+        <img id="eevee-sprite" src="/images/eevee-walk.gif" alt="Eevee running" onclick="playCry()">
         <audio controls id="bg-music">
-            <source src="/../pokequiz/audio/pokecenter-theme-lofi.mp3" type="audio/ogg">
+            <source src="/audio/pokecenter-theme-lofi.mp3" type="audio/ogg">
         </audio>
     </header>
     <section>
         <main>
             <div id="main-txt">
                 <p>Boas-vindas ao Pokéquiz! <br>
-                    Aqui você pode testar seus conhecimentos sobre Pokémon! <br>
-                    Aperte no botão abaixo para começar</p>
+                    Vamos testar seus conhecimentos sobre Pokémon? <br>
+                </p>
             </div>
+            <div id="quiz-container"></div>
             <div id="menu-options">
-                <button id="next-button" onclick="swap(); options()">Próximo</button>
+                <button id="next-button" onclick="swap(); options();">Próximo</button>
             </div>
+            <div id="resposta-quiz"></div>
         </main>
     </section>
     <aside>
     </aside>
     <footer>
+        <img id="pikachu-animation" src="/images/pikachu-tutorial.gif" alt="Pikachu animation">
         <p class="copyright">&#169 2025 Pokémon. Todos os direitos reservados <br>
         &#169 1996-2025 Nintendo/Creatures Inc./GAME FREAK inc. Todos os direitos reservados</p>
     </footer>

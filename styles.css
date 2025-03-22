@@ -8,8 +8,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 body{
-    background-image: url(/../pokequiz/images/pokecenter-bg.png);
+    background-image: url(/images/pokecenter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -46,17 +61,19 @@ section {
 main{
     text-align: left;
     font-family: 'Pixelify Sans', sans-serif;
-    color: white;
     font-size: xx-large;
     flex: 1;
 }
 
 main button{
     display: block;
-    font-size: x-large;
+    font-size: xx-large;
     touch-action: manipulation;
     outline: none;
     margin-top: 20px;
+    font-family: 'Pixelify Sans', sans-serif;
+    border: none;
+    background: none;
 }
 
 aside{
@@ -75,9 +92,56 @@ footer {
     text-align: center;
     background-color:whitesmoke;
     font-family: 'Pixelify Sans', sans-serif;
-    padding: 10px;
     margin-top: auto;
     width: 100%;
+}
+
+#menu-options button{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+#main-txt{
+    color: white;
+    text-shadow: 2px 2px #788090;
+}
+
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 20px;
+    color: #606060;
+    text-shadow: 3px 3px #D0D0C8;
+}
+
+#quiz-container button{
+    color: #606060;
+    text-shadow: 3px 3px #D0D0C8;
+}
+
+#quiz-background {
+    z-index: -1;
+    position: absolute;
+    top: 17%;
+    left: 50;
+    width: 50%;
+    height: 50%;
+    background: url('/images/quiz-menu.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#quiz-option{
+    text-align: center;
 }
 
 #logotipo{
@@ -97,4 +161,21 @@ footer {
 
 #startBtn{
     margin-right: 50px;
+}
+
+#menu-options button:hover{
+    position: relative;
+    left: 10px;
+}
+
+#pikachu-animation{
+    position: absolute;
+    left: 15%;
+    bottom: 6%;
+    width: 3%;
+}
+
+#resposta-quiz{
+    color: #606060;
+    text-shadow: 3px 3px #D0D0C8;
 }
