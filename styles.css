@@ -24,7 +24,7 @@
 }
 
 body{
-    background-image: url(/images/pokecenter-bg.png);
+    background-image: url('images/pokecenter-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -130,7 +130,7 @@ footer {
     left: 50;
     width: 50%;
     height: 50%;
-    background: url('/images/quiz-menu.png') no-repeat center center;
+    background: url('images/quiz-menu.png') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
